@@ -1,7 +1,8 @@
 <?php
 
     class Category{
-        puclic $name;
+        
+        public $name;
 
         function __construct(String $name){
             $this->name = $name;

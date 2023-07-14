@@ -10,7 +10,21 @@
         new Category ('Cats');
     ]; //qui andrà messo: cani e gatti
 
-    $dogsProducts = []; //qui ci andrà messo: Cibo,Gioco,Cuccia,Pulizia,Accessori
-    $catsProducts = [];
+    $dogsProducts = [
+        new Product ('Food');
+        new Product ('Toys');
+        new Product ('Kennel');
+        new Product ('Cleaning');
+        new Product ('Accessories');
+        
+
+    ]; //qui ci andrà messo: Cibo,Gioco,Cuccia,Pulizia,Accessori
+    $catsProducts = [
+        new Product ('Food');
+        new Product ('Toys');
+        new Product ('Kennel');
+        new Product ('Cleaning');
+        new Product ('Accessories');
+    ];
 
 ?>
