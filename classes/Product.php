@@ -1,15 +1,24 @@
 <?php
+include_once __DIR__ . '/Category.php';
 
-class Product {
-    public $image;
-    public $title;
+class Product{
+    public $name;
+    public $description;
     public $price;
+    public $image;
+    public $category;
+    public $quantity;
 
-    public function __construct($image, $title, $price) {
-        $this->image = $image;
-        $this->title = $title;
+    function __construct(String $name,String $description,Float $price, String $image, Category $category, Int $quantity){
+        $this->name = $name;
+        $this->description = $description;
         $this->price = $price;
+        $this->image = $image;
+        $this->category = $category;
+        $this->quantity = $quantity;
+    }
+
+    public function getInfo(){
+        return "Product $this->name with price $this->price$";
     }
 }
-
-

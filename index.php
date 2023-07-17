@@ -1,5 +1,5 @@
 <?php
-        include_once __DIR__ . '/db/db.php';
+        include_once __DIR__ . '/db/init.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,72 +17,17 @@
 <body>
 
     <header>
-        <h1>DOGS $ CATS SHOP</h1>
+        <h1>DOGS & CATS SHOP</h1>
     </header>
     <main>
-    <section class="container">
-            <h2>Dogs</h2>
-            <div class="row">
-                <?php foreach ($categories as $category) { ?>
-                    
-                    <?php if ($category->name === 'Dogs') { ?>
-                        <?php foreach ($category->products as $subcategory => $product) { ?>
-                            <div class="col-3">
-                                <div class="card">
-                                    <div class="icon-size d-flex align-items-center">
-                                    <h3 class="me-2">
+        <section class="container">
 
-                                        <?php echo $category->name; ?>
-                                    </h3>    
-                                        <img src="<?php echo $category->icon; ?>" alt="<?php echo $category->name; ?> Icon">
-                                
-                                    </div>
-                                
-                                    
-                                    <div class="card-body">
-                                        <div class="image-container">
-                                            <img src="<?php echo $product->image; ?>" class="card-img-top" alt="<?php echo $product->title; ?>">
-                                        </div>
-                                    
-                                        <h5 class="card-title"><?php echo $product->title; ?></h5>
-                                        <p class="card-text">Price: $<?php echo $product->price; ?></p>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php } ?>
-                    <?php } ?>
-                <?php } ?>
-            </div>
 
             
-            <div class="row">
-                <?php foreach ($categories as $category) { ?>
-                    
-                    <?php if ($category->name === 'Cats') { ?>
-                        <?php foreach ($category->products as $subcategory => $product) { ?>
-                            <div class="col-3">
-                                <div class="card">
-                                    <div class="icon-size d-flex align-items-center">
-                                        <h3 class="me-2">
-                                            <?php echo $category->name; ?>
-                                        </h3>
-                                        <img src="<?php echo $category->icon; ?>" alt="<?php echo $category->name; ?> Icon">
-                                    </div>
-                                    
-                                    
-                                    <div class="card-body">
-                                        <div class="image-container">
-                                            <img src="<?php echo $product->image; ?>" class="card-img-top" alt="<?php echo $product->title; ?>">
-                                        </div>    
-                                        <h5 class="card-title"><?php echo $product->title; ?></h5>
-                                        <p class="card-text">Price: $<?php echo $product->price; ?></p>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php } ?>
-                    <?php } ?>
-                <?php } ?>
-            </div>
+            
+
+            
+            
         </section>
     </main>
     
