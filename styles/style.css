@@ -1,18 +1,7 @@
-.icon-size{
-    width: 20px;
-    height: 20px;
+div.card img.product-image{
+    height: 200px;
+    object-fit: contain;
 }
-.icon-size img{
-    width: 100%;
-}
-.icon-size{
-    width: 54%;
-    height: 100%;
-}
-.image-container img{
-   object-fit: cover;
-}
-.image-container{
-    width:50px;
-    height: 50px;
+h1{
+    color: red;
 }
